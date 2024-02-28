@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'minimal'; /* Nom de la police */
-    src: url('assets/minimal_V3-Light.otf') format('opentype'); /* Chemin vers le fichier de police */
+    src: 
+        url('fonts/minimal_V3-Book.otf') format('opentype'),
   }
 
 body{
@@ -86,11 +87,7 @@ body{
   .sections {
     margin-top: 70px; /* La hauteur de la barre de navigation */
     padding: 20px; /* Ajout de padding pour l'espace autour de la section */ 
-    background-image: url('assets/arche.png'); /* Image de fond */
     background-color: white;
-    background-size: cover; /* Assurez-vous que l'image de fond couvre toute la section */
-    background-position: center; /* Centrez l'image de fond */
-    background-repeat: no-repeat; /* Empêchez l'image de fond de se répéter */
 }
 
   
