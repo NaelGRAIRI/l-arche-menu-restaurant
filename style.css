@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'minimal'; /* Nom de la police */
+    src: url('assets/minimal_V3-Light.otf') format('opentype'); /* Chemin vers le fichier de police */
+  }
+
+body{
+    background-image: url('assets/Fond-jaune-rose.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'minimal', sans-serif; /* Utilisation de la police personnalisée */
+}
 /* Styles pour la barre de navigation */
 .navbar {
     position: fixed;
@@ -9,6 +21,7 @@
     align-items: center;
     background-color: #E1BAD8;
     padding: 10px;
+    z-index: 1000; /* Assurez-vous que la navbar a un z-index plus élevé */
   }
   
   /* Styles pour le logo */
@@ -42,7 +55,7 @@
     background-color: #f9f9f9;
     min-width: 120px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 1; /* Assurez-vous que le dropdown a un z-index plus élevé */
     right: 0; /* Décalage à partir du bord droit */
     margin-right: 10px; /* Décalage supplémentaire pour ajuster */
   }
@@ -68,4 +81,87 @@
   .navbar-dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+  .sections {
+    margin-top: 70px; /* La hauteur de la barre de navigation */
+    padding: 20px; /* Ajout de padding pour l'espace autour de la section */ 
+    background-image: url('assets/arche.png'); /* Image de fond */
+    background-color: white;
+    background-size: cover; /* Assurez-vous que l'image de fond couvre toute la section */
+    background-position: center; /* Centrez l'image de fond */
+    background-repeat: no-repeat; /* Empêchez l'image de fond de se répéter */
+}
+
   
+  
+  .sections h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .sections ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sections li {
+    margin-bottom: 5px;
+  }
+  
+  /* Styles spécifiques pour le menu enfants */
+  .menu-enfants {
+    position: relative;
+  }
+  
+  .menu-enfants .prix {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.italique{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.center{
+    text-align: center;
+}
+
+.prix {
+    position: absolute;
+    right: 0;
+    width: 40px; /* Définir une largeur fixe pour tous les prix */
+    text-align: right; /* Alignement du texte à droite */
+  }
+  
+  .prix-glace {
+    text-align: right;
+    position: absolute;
+    width: 50px;
+    right: 0; 
+    left: 103%;
+  }
+  
+  .plats-fixes li,
+  .a-partager li,
+  .desserts li {
+    position: relative;
+    padding-right: 60px; /* Pour laisser de l'espace pour les prix */
+  }
+  
+/* Styles pour le logo "veggie" */
+.logo-veggie {
+    display: inline-block;
+    width: 20px; /* Ajustez la taille du logo selon vos besoins */
+    height: 20px; /* Ajustez la taille du logo selon vos besoins */
+    background-image: url("assets/veggie-logo.png");
+    background-size: contain; /* Ajustez la taille du logo pour qu'il s'adapte à la zone définie */
+    background-repeat: no-repeat; /* Assurez-vous que le logo ne se répète pas */
+    margin-right: 5px; /* Espacement entre le logo et le texte du plat */
+  }
