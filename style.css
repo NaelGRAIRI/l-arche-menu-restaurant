@@ -1,0 +1,71 @@
+/* Styles pour la barre de navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E1BAD8;
+    padding: 10px;
+  }
+  
+  /* Styles pour le logo */
+  .navbar-logo img {
+    width: 150px; /* Ajustez la taille du logo selon vos besoins */
+  }
+  
+  /* Styles pour le dropdown */
+  .navbar-dropdown {
+    position: relative;
+  }
+  
+  .dropdown-btn {
+    background-color: #E1BAD8;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-btn img {
+    width: 20px; /* Ajustez la taille de l'icône du dropdown */
+    margin-right: 5px; /* Espacement entre l'icône et le texte */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0; /* Décalage à partir du bord droit */
+    margin-right: 10px; /* Décalage supplémentaire pour ajuster */
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-content a img {
+    width: 20px; /* Ajustez la taille de l'icône d'option */
+    margin-right: 5px; /* Espacement entre l'icône et le texte */
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Afficher le contenu du dropdown au survol */
+  .navbar-dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
