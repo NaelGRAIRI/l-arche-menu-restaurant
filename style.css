@@ -118,6 +118,10 @@ body{
     right: 0;
 }
 
+.sans-margin-top{
+  margin-top: 0;
+}
+
 .italique{
     font-style: italic;
 }
